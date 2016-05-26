@@ -1,4 +1,9 @@
 function outputphase = fftunwrap2(im,iteration,subsampling)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the FFT-based phase unwrapping method
+% It is robust to noise
+% But it may have some aberrations at sharp charging positions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     disp('fft based unwrapping')
     disp('************************************************')
     tic

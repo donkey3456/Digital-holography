@@ -45,9 +45,9 @@ final = mask1.*holocorrected1 + mask2.*medfilt2c(holocorrected1,[3,3])+...
 mask3.*medfilt2c(holocorrected1,[7,7]);
 
 z=0.423
-%recons = PaddingASA(final,-1i*z,px*2,py*2,lambda);
-%recons = PaddingASA(final./exp(1i*angle(finalback)),-1i*z,px*2,py*2,lambda);
-recons = PaddingASA(final./exp(1i*angle(finalback))./ExtractBackground(abs(finalback),100).^0.5,-1i*z,px*2,py*2,lambda);
+%recons = PaddingASA(final,-z,px*2,py*2,lambda);
+%recons = PaddingASA(final./exp(1i*angle(finalback)).^0.5,-z,px*2,py*2,lambda);
+recons = PaddingASA(final./exp(1i*angle(finalback))./ExtractBackground(abs(finalback),100).^0.5,-z,px*2,py*2,lambda);
 
 image = abs(recons);
 image = Normal2Image(image);

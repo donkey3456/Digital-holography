@@ -1,4 +1,11 @@
 function correction2 = correction2Dfast(Holo,iterations,preSubSampling,postSubSampling,threshold)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This function is used to correct the aberrations in the background.
+% You can directly call correction2Dfast(Holo), I have set the default value for other parameters.
+% Originally, this method use lines and areas that are not influenced by the sample.
+% Here, I use areas that have lower noise.
+% For your application, I think you need to modify this function!!!!!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 tic
     %1.1 check parameters

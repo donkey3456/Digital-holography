@@ -1,7 +1,9 @@
 function OutBmp = ExtractBackground(InputBmp,Radius)
-%input must be a grayscale image
-%output is an image in which light intensity is homogenous 
-%distributed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is just a average image filter.
+% input must be a greyscale image
+% output is an image in which light intensity is homogeneously distributed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [yn,xn] = size(InputBmp);
 
 h = ones(2 * Radius + 1,2 * Radius + 1);

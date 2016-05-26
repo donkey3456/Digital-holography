@@ -1,4 +1,7 @@
 function generatedField = GenerateLightField(input,fy,fx,LowpassR)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This function generate the light field
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     [yn,xn]=size(input);
 
     [gridx gridy]= meshgrid(1:xn,1:yn);
